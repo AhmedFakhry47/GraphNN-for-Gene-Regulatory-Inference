@@ -23,13 +23,13 @@ if __name__ == '__main__':
 	
 	output  = {'N-{}'.format(i):{} for i in range(1,n_files+1)}
 	
-	file1   = 'Generated Yeast-{}_goldstandard.tsv'
-	file2   = 'Generated Yeast-{}_multifactorial_perturbations.tsv'
+	file1   = 'N_{}/Generated Yeast-{}_goldstandard.tsv'
+	file2   = 'N_{}/Generated Yeast-{}_multifactorial_perturbations.tsv'
 	
 
 	for i in range(1,n_files+1):
 		#To get gene expressions
-		genes_file   = open_file(os.path.join(direc,file2.format(i)))
+		genes_file   = open_file(os.path.join(direc,file2.format(i,i)))
 
 		genes  = {geneName:[] for geneName in next(genes_file)}
 		expressions = []
@@ -44,7 +44,7 @@ if __name__ == '__main__':
 		del expressions
 
 		#To store labels 
-		groundTs = open_file(os.path.join(direc,file1.format(i)))
+		groundTs = open_file(os.path.join(direc,file1.format(i,i)))
 		
 		for p,groundT in enumerate(groundTs):
 			output['N-{}'.format(i)][p] = {}
