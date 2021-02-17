@@ -1,0 +1,2131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:jigcell="http://www.sbml.org/2001/ns/jigcell" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbml="http://www.sbml.org/sbml/level2" xmlns:xlink="http://www.w3.org/1999/xlink" level="2" version="1">
+  <model name="Generated Yeast-5">
+<notes><p xmlns="http://www.w3.org/1999/xhtml"></p></notes>
+    <listOfCompartments>
+      <compartment id="cell" name="cell" size="1.0" />
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="YCR018C" name="YCR018C" compartment="cell" />
+      <species id="YGR044C" name="YGR044C" compartment="cell" />
+      <species id="YOR140W" name="YOR140W" compartment="cell" />
+      <species id="YCR097W" name="YCR097W" compartment="cell" />
+      <species id="YGL254W" name="YGL254W" compartment="cell" />
+      <species id="YCR040W" name="YCR040W" compartment="cell" />
+      <species id="YLR098C" name="YLR098C" compartment="cell" />
+      <species id="YJL056C" name="YJL056C" compartment="cell" />
+      <species id="YPR199C" name="YPR199C" compartment="cell" />
+      <species id="YOL089C" name="YOL089C" compartment="cell" />
+      <species id="YOL067C" name="YOL067C" compartment="cell" />
+      <species id="YPL038W" name="YPL038W" compartment="cell" />
+      <species id="YDR146C" name="YDR146C" compartment="cell" />
+      <species id="YCR096C" name="YCR096C" compartment="cell" />
+      <species id="YLR013W" name="YLR013W" compartment="cell" />
+      <species id="YGL209W" name="YGL209W" compartment="cell" />
+      <species id="YML113W" name="YML113W" compartment="cell" />
+      <species id="YPL248C" name="YPL248C" compartment="cell" />
+      <species id="YGL035C" name="YGL035C" compartment="cell" />
+      <species id="YJL110C" name="YJL110C" compartment="cell" />
+      <species id="YDR253C" name="YDR253C" compartment="cell" />
+      <species id="YDL170W" name="YDL170W" compartment="cell" />
+      <species id="YDR463W" name="YDR463W" compartment="cell" />
+      <species id="YKL020C" name="YKL020C" compartment="cell" />
+      <species id="YMR019W" name="YMR019W" compartment="cell" />
+      <species id="YLR302C" name="YLR302C" compartment="cell" />
+      <species id="YKL001C" name="YKL001C" compartment="cell" />
+      <species id="YEL057C" name="YEL057C" compartment="cell" />
+      <species id="YCR039C" name="YCR039C" compartment="cell" />
+      <species id="YDR491C" name="YDR491C" compartment="cell" />
+      <species id="YIL162W" name="YIL162W" compartment="cell" />
+      <species id="YNL035C" name="YNL035C" compartment="cell" />
+      <species id="YDR112W" name="YDR112W" compartment="cell" />
+      <species id="YNL238W" name="YNL238W" compartment="cell" />
+      <species id="YCR018CA" name="YCR018CA" compartment="cell" />
+      <species id="YAL049C" name="YAL049C" compartment="cell" />
+      <species id="YDR098CA" name="YDR098CA" compartment="cell" />
+      <species id="YJR138W" name="YJR138W" compartment="cell" />
+      <species id="YMR260C" name="YMR260C" compartment="cell" />
+      <species id="YER079W" name="YER079W" compartment="cell" />
+      <species id="YMR283C" name="YMR283C" compartment="cell" />
+      <species id="YMR228W" name="YMR228W" compartment="cell" />
+      <species id="YBR275C" name="YBR275C" compartment="cell" />
+      <species id="YGR084C" name="YGR084C" compartment="cell" />
+      <species id="YDR040C" name="YDR040C" compartment="cell" />
+      <species id="YCL041C" name="YCL041C" compartment="cell" />
+      <species id="YAR002CA" name="YAR002CA" compartment="cell" />
+      <species id="YOR236W" name="YOR236W" compartment="cell" />
+      <species id="YFL065C" name="YFL065C" compartment="cell" />
+      <species id="YBL074C" name="YBL074C" compartment="cell" />
+      <species id="_void_" name="_void_" compartment="cell" initialAmount="0.0" boundaryCondition="true" constant="true" />
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="YCR018C_synthesis" name="YCR018C_synthesis: (1) + (2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCR018C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGR044C" />
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03622029904195519" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.022469483712451156" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.022469483712451156" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.047660290732682124" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.7663667302355036" />
+            <parameter id="a_3" name="a_3" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.06699656901182606" />
+            <parameter id="k_2" name="k_2" value="0.9574145479826257" />
+            <parameter id="n_1" name="n_1" value="3.6354043044051214" />
+            <parameter id="n_2" name="n_2" value="4.944372658497771" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR018C_degradation" name="YCR018C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCR018C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03622029904195519" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGR044C_synthesis" name="YGR044C_synthesis: ~(1~2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YGR044C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YCR097W" />
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.021781430482418967" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.019570261323398196" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.019570261323398196" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.003556945301391168" />
+            <parameter id="k_1" name="k_1" value="0.35065426835091784" />
+            <parameter id="k_2" name="k_2" value="0.974022276645992" />
+            <parameter id="n_1" name="n_1" value="6.106164335032009" />
+            <parameter id="n_2" name="n_2" value="1.28087669532173" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGR044C_degradation" name="YGR044C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YGR044C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.021781430482418967" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOR140W_synthesis" name="YOR140W_synthesis: ~(1~2) + (3) + (4)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YOR140W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPL248C" />
+          <modifierSpeciesReference species="YGL254W" />
+          <modifierSpeciesReference species="YGR044C" />
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.05274998755266767" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.020828692829096728" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.020828692829096728" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="bindsAsComplex_3" name="bindsAsComplex_3" value="1.0" />
+            <parameter id="numActivators_3" name="numActivators_3" value="1.0" />
+            <parameter id="numDeactivators_3" name="numDeactivators_3" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.44878473011721765" />
+            <parameter id="a_1" name="a_1" value="0.0" />
+            <parameter id="a_2" name="a_2" value="1.0" />
+            <parameter id="a_3" name="a_3" value="0.21115033687054274" />
+            <parameter id="a_4" name="a_4" value="1.0" />
+            <parameter id="a_5" name="a_5" value="0.3006813213171413" />
+            <parameter id="a_6" name="a_6" value="1.0" />
+            <parameter id="a_7" name="a_7" value="0.8634934521290538" />
+            <parameter id="k_1" name="k_1" value="0.28447432671673595" />
+            <parameter id="k_2" name="k_2" value="0.20433234242256731" />
+            <parameter id="k_3" name="k_3" value="0.6779597660247236" />
+            <parameter id="k_4" name="k_4" value="0.09995282277232036" />
+            <parameter id="n_1" name="n_1" value="3.8310720246932286" />
+            <parameter id="n_2" name="n_2" value="2.02555696060161" />
+            <parameter id="n_3" name="n_3" value="5.0287891590468075" />
+            <parameter id="n_4" name="n_4" value="1.0590417794393088" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOR140W_degradation" name="YOR140W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YOR140W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.05274998755266767" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR097W_synthesis" name="YCR097W_synthesis: ~(1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCR097W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YOL089C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.022880172014618477" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.0607349082626146" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.0607349082626146" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.05740837374117069" />
+            <parameter id="k_1" name="k_1" value="0.23120493209222331" />
+            <parameter id="n_1" name="n_1" value="4.2305561773525735" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR097W_degradation" name="YCR097W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCR097W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.022880172014618477" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGL254W_synthesis" name="YGL254W_synthesis: (1) + ~(2) + (3)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YGL254W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YOL067C" />
+          <modifierSpeciesReference species="YPL038W" />
+          <modifierSpeciesReference species="YDR253C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02818389358650795" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.0344903042418851" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.0344903042418851" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="bindsAsComplex_3" name="bindsAsComplex_3" value="0.0" />
+            <parameter id="numActivators_3" name="numActivators_3" value="1.0" />
+            <parameter id="numDeactivators_3" name="numDeactivators_3" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.5461350743703104" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.023064839686427474" />
+            <parameter id="a_3" name="a_3" value="0.5795580251225076" />
+            <parameter id="a_4" name="a_4" value="1.0" />
+            <parameter id="a_5" name="a_5" value="1.0" />
+            <parameter id="a_6" name="a_6" value="0.5295927691608687" />
+            <parameter id="a_7" name="a_7" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.5360511597804726" />
+            <parameter id="k_2" name="k_2" value="0.34832923161331564" />
+            <parameter id="k_3" name="k_3" value="0.4513711058627814" />
+            <parameter id="n_1" name="n_1" value="2.152208044349517" />
+            <parameter id="n_2" name="n_2" value="2.819386850956621" />
+            <parameter id="n_3" name="n_3" value="2.8034025318474933" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGL254W_degradation" name="YGL254W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YGL254W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02818389358650795" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR040W_synthesis" name="YCR040W_synthesis: (1*2~3~4) + ~(5~6) + ~(7~8)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCR040W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPR199C" />
+          <modifierSpeciesReference species="YJL110C" />
+          <modifierSpeciesReference species="YCR097W" />
+          <modifierSpeciesReference species="YJL056C" />
+          <modifierSpeciesReference species="YDL170W" />
+          <modifierSpeciesReference species="YLR098C" />
+          <modifierSpeciesReference species="YLR013W" />
+          <modifierSpeciesReference species="YCR096C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.028224507076524186" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.024612596587378407" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.024612596587378407" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="2.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="1.0" />
+            <parameter id="bindsAsComplex_3" name="bindsAsComplex_3" value="0.0" />
+            <parameter id="numActivators_3" name="numActivators_3" value="1.0" />
+            <parameter id="numDeactivators_3" name="numDeactivators_3" value="1.0" />
+            <parameter id="a_0" name="a_0" value="0.5776505501151181" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.0" />
+            <parameter id="a_3" name="a_3" value="0.3512334564915712" />
+            <parameter id="a_4" name="a_4" value="0.010166119449709021" />
+            <parameter id="a_5" name="a_5" value="0.4978979198218402" />
+            <parameter id="a_6" name="a_6" value="0.0" />
+            <parameter id="a_7" name="a_7" value="0.0" />
+            <parameter id="k_1" name="k_1" value="0.5505426653870381" />
+            <parameter id="k_2" name="k_2" value="0.9535801609652117" />
+            <parameter id="k_3" name="k_3" value="0.07655861894134432" />
+            <parameter id="k_4" name="k_4" value="0.23020398860098795" />
+            <parameter id="k_5" name="k_5" value="0.4934642443037592" />
+            <parameter id="k_6" name="k_6" value="0.9425741111650132" />
+            <parameter id="k_7" name="k_7" value="0.7003911721962505" />
+            <parameter id="k_8" name="k_8" value="0.8445209699566476" />
+            <parameter id="n_1" name="n_1" value="3.3338202588604418" />
+            <parameter id="n_2" name="n_2" value="4.032695124201823" />
+            <parameter id="n_3" name="n_3" value="1.3546880718508072" />
+            <parameter id="n_4" name="n_4" value="3.2418284174065795" />
+            <parameter id="n_5" name="n_5" value="2.294549888679737" />
+            <parameter id="n_6" name="n_6" value="7.6870054204017295" />
+            <parameter id="n_7" name="n_7" value="2.4800703542474567" />
+            <parameter id="n_8" name="n_8" value="5.315823463168629" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR040W_degradation" name="YCR040W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCR040W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.028224507076524186" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YLR098C_synthesis" name="YLR098C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YLR098C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.018371571513973194" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.03624977398330803" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.03624977398330803" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YLR098C_degradation" name="YLR098C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YLR098C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.018371571513973194" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YJL056C_synthesis" name="YJL056C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YJL056C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02234892831139969" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.026413117762239414" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.026413117762239414" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YJL056C_degradation" name="YJL056C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YJL056C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02234892831139969" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YPR199C_synthesis" name="YPR199C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YPR199C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.023100852860359736" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.024539302912101095" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.024539302912101095" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YPR199C_degradation" name="YPR199C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YPR199C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.023100852860359736" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOL089C_synthesis" name="YOL089C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YOL089C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.029229070683437428" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.032826916496809785" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.032826916496809785" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOL089C_degradation" name="YOL089C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YOL089C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.029229070683437428" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOL067C_synthesis" name="YOL067C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YOL067C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03710833675744262" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.0306276297251753" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.0306276297251753" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOL067C_degradation" name="YOL067C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YOL067C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03710833675744262" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YPL038W_synthesis" name="YPL038W_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YPL038W" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.024624093570186065" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.02492098621433162" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.02492098621433162" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YPL038W_degradation" name="YPL038W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YPL038W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.024624093570186065" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR146C_synthesis" name="YDR146C_synthesis: (1) + ~(2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR146C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL035C" />
+          <modifierSpeciesReference species="YGL209W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02116691475725895" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.032161337027519804" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.032161337027519804" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.5048298276964993" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.0" />
+            <parameter id="a_3" name="a_3" value="0.3734701277237855" />
+            <parameter id="k_1" name="k_1" value="0.4546952851768583" />
+            <parameter id="k_2" name="k_2" value="0.32795952409273016" />
+            <parameter id="n_1" name="n_1" value="4.429147073891714" />
+            <parameter id="n_2" name="n_2" value="4.7892996058828565" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR146C_degradation" name="YDR146C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR146C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02116691475725895" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR096C_synthesis" name="YCR096C_synthesis: (1*2) + ~(3*4*5) + (6) + (7)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCR096C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR463W" />
+          <modifierSpeciesReference species="YOL089C" />
+          <modifierSpeciesReference species="YKL020C" />
+          <modifierSpeciesReference species="YOL067C" />
+          <modifierSpeciesReference species="YML113W" />
+          <modifierSpeciesReference species="YJL110C" />
+          <modifierSpeciesReference species="YPR199C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.026877434584704353" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.023635068030306967" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.023635068030306967" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="3.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="bindsAsComplex_3" name="bindsAsComplex_3" value="0.0" />
+            <parameter id="numActivators_3" name="numActivators_3" value="1.0" />
+            <parameter id="numDeactivators_3" name="numDeactivators_3" value="0.0" />
+            <parameter id="bindsAsComplex_4" name="bindsAsComplex_4" value="1.0" />
+            <parameter id="numActivators_4" name="numActivators_4" value="1.0" />
+            <parameter id="numDeactivators_4" name="numDeactivators_4" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.6657018195493498" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.0" />
+            <parameter id="a_3" name="a_3" value="0.6155622072812278" />
+            <parameter id="a_4" name="a_4" value="1.0" />
+            <parameter id="a_5" name="a_5" value="1.0" />
+            <parameter id="a_6" name="a_6" value="0.580825731455559" />
+            <parameter id="a_7" name="a_7" value="1.0" />
+            <parameter id="a_8" name="a_8" value="1.0" />
+            <parameter id="a_9" name="a_9" value="1.0" />
+            <parameter id="a_10" name="a_10" value="0.6363532423847013" />
+            <parameter id="a_11" name="a_11" value="1.0" />
+            <parameter id="a_12" name="a_12" value="1.0" />
+            <parameter id="a_13" name="a_13" value="1.0" />
+            <parameter id="a_14" name="a_14" value="1.0" />
+            <parameter id="a_15" name="a_15" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.37967542147729544" />
+            <parameter id="k_2" name="k_2" value="0.916670937568415" />
+            <parameter id="k_3" name="k_3" value="0.13804506852757187" />
+            <parameter id="k_4" name="k_4" value="0.2004066110169515" />
+            <parameter id="k_5" name="k_5" value="0.27036814771825446" />
+            <parameter id="k_6" name="k_6" value="0.6606191000901163" />
+            <parameter id="k_7" name="k_7" value="0.8932364988629706" />
+            <parameter id="n_1" name="n_1" value="1.6533008991377491" />
+            <parameter id="n_2" name="n_2" value="1.3564451773014703" />
+            <parameter id="n_3" name="n_3" value="3.7378258547335816" />
+            <parameter id="n_4" name="n_4" value="3.663143101919666" />
+            <parameter id="n_5" name="n_5" value="4.32050348072271" />
+            <parameter id="n_6" name="n_6" value="5.224003183231222" />
+            <parameter id="n_7" name="n_7" value="3.68514657255212" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR096C_degradation" name="YCR096C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCR096C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.026877434584704353" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YLR013W_synthesis" name="YLR013W_synthesis: ~(1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YLR013W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02566572895070695" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.025450645480510962" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.025450645480510962" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.05416850853501409" />
+            <parameter id="k_1" name="k_1" value="0.7743228002474644" />
+            <parameter id="n_1" name="n_1" value="2.453278816597517" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YLR013W_degradation" name="YLR013W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YLR013W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02566572895070695" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGL209W_synthesis" name="YGL209W_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YGL209W" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02783567875227842" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.031133399601588233" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.031133399601588233" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGL209W_degradation" name="YGL209W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YGL209W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02783567875227842" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YML113W_synthesis" name="YML113W_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YML113W" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.023846720400365635" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.019583453831252175" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.019583453831252175" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YML113W_degradation" name="YML113W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YML113W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.023846720400365635" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YPL248C_synthesis" name="YPL248C_synthesis: ~(1~2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YPL248C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL209W" />
+          <modifierSpeciesReference species="YGL035C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.0326801269282319" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.02452913730942041" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.02452913730942041" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="8.330860217009572E-4" />
+            <parameter id="k_1" name="k_1" value="0.6878636954072863" />
+            <parameter id="k_2" name="k_2" value="0.7849622713471763" />
+            <parameter id="n_1" name="n_1" value="5.8904543831002805" />
+            <parameter id="n_2" name="n_2" value="1.8767214539598704" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YPL248C_degradation" name="YPL248C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YPL248C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.0326801269282319" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGL035C_synthesis" name="YGL035C_synthesis: (1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YGL035C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL209W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.04308528108330609" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.035863557669403884" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.035863557669403884" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.027820673148393087" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.49966660257661716" />
+            <parameter id="n_1" name="n_1" value="1.1974001848214586" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGL035C_degradation" name="YGL035C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YGL035C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.04308528108330609" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YJL110C_synthesis" name="YJL110C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YJL110C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.07315687372528129" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.024780534019495388" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.024780534019495388" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YJL110C_degradation" name="YJL110C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YJL110C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.07315687372528129" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR253C_synthesis" name="YDR253C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR253C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.022659629429028952" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.039477620598096654" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.039477620598096654" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR253C_degradation" name="YDR253C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR253C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.022659629429028952" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDL170W_synthesis" name="YDL170W_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDL170W" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.01484707414584872" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.046655090581740485" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.046655090581740485" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDL170W_degradation" name="YDL170W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDL170W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.01484707414584872" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR463W_synthesis" name="YDR463W_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR463W" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.0452738399367296" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.01744140777928815" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.01744140777928815" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR463W_degradation" name="YDR463W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR463W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.0452738399367296" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YKL020C_synthesis" name="YKL020C_synthesis: no inputs" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YKL020C" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.01773117100355342" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.032411030177369175" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.032411030177369175" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YKL020C_degradation" name="YKL020C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YKL020C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.01773117100355342" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR019W_synthesis" name="YMR019W_synthesis: ~(1*2) + ~(3)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YMR019W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YOL067C" />
+          <modifierSpeciesReference species="YOL089C" />
+          <modifierSpeciesReference species="YDR463W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.01910722325922726" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.01693790756480256" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.01693790756480256" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.48603036194326577" />
+            <parameter id="a_2" name="a_2" value="0.3818057993937424" />
+            <parameter id="a_3" name="a_3" value="0.0" />
+            <parameter id="k_1" name="k_1" value="0.9350743158580735" />
+            <parameter id="k_2" name="k_2" value="0.19090822375845165" />
+            <parameter id="k_3" name="k_3" value="0.3541306808590889" />
+            <parameter id="n_1" name="n_1" value="1.0219232150189386" />
+            <parameter id="n_2" name="n_2" value="4.543570158458367" />
+            <parameter id="n_3" name="n_3" value="2.13631930135277" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR019W_degradation" name="YMR019W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YMR019W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.01910722325922726" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YLR302C_synthesis" name="YLR302C_synthesis: ~(1*2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YLR302C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YOL067C" />
+          <modifierSpeciesReference species="YDR463W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.04930084188056969" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.03840894530747255" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.03840894530747255" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.049660666424365285" />
+            <parameter id="k_1" name="k_1" value="0.4438182708155364" />
+            <parameter id="k_2" name="k_2" value="0.6051455187983811" />
+            <parameter id="n_1" name="n_1" value="1.0012994753711957" />
+            <parameter id="n_2" name="n_2" value="3.5985884360249014" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YLR302C_degradation" name="YLR302C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YLR302C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.04930084188056969" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YKL001C_synthesis" name="YKL001C_synthesis: ~(1) + (2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YKL001C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YLR013W" />
+          <modifierSpeciesReference species="YDR253C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02050995310224501" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.025243760842252185" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.025243760842252185" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.47341139416204725" />
+            <parameter id="a_1" name="a_1" value="0.0" />
+            <parameter id="a_2" name="a_2" value="1.0" />
+            <parameter id="a_3" name="a_3" value="0.7938585786423961" />
+            <parameter id="k_1" name="k_1" value="0.041211360979359596" />
+            <parameter id="k_2" name="k_2" value="0.6971163563407027" />
+            <parameter id="n_1" name="n_1" value="1.3579858995882867" />
+            <parameter id="n_2" name="n_2" value="1.7738292056433265" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YKL001C_degradation" name="YKL001C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YKL001C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02050995310224501" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YEL057C_synthesis" name="YEL057C_synthesis: ~(1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YEL057C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPL248C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03189514428768954" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.030307874946882012" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.030307874946882012" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.051613057614665614" />
+            <parameter id="k_1" name="k_1" value="0.8081318216072395" />
+            <parameter id="n_1" name="n_1" value="1.4592666125990417" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YEL057C_degradation" name="YEL057C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YEL057C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03189514428768954" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR039C_synthesis" name="YCR039C_synthesis: ~(1*2*3*4~5) + ~(6*7~8)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCR039C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YCR096C" />
+          <modifierSpeciesReference species="YLR013W" />
+          <modifierSpeciesReference species="YPR199C" />
+          <modifierSpeciesReference species="YJL110C" />
+          <modifierSpeciesReference species="YDL170W" />
+          <modifierSpeciesReference species="YCR097W" />
+          <modifierSpeciesReference species="YJL056C" />
+          <modifierSpeciesReference species="YLR098C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03176767003592145" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.035887422443886194" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.035887422443886194" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="4.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="2.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="1.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.42714566271285825" />
+            <parameter id="a_2" name="a_2" value="0.4493722979031112" />
+            <parameter id="a_3" name="a_3" value="0.0" />
+            <parameter id="k_1" name="k_1" value="0.2596156530245207" />
+            <parameter id="k_2" name="k_2" value="0.4686530681536533" />
+            <parameter id="k_3" name="k_3" value="0.3707050897181034" />
+            <parameter id="k_4" name="k_4" value="0.13007605367340147" />
+            <parameter id="k_5" name="k_5" value="0.029748003070708365" />
+            <parameter id="k_6" name="k_6" value="0.5237243569432758" />
+            <parameter id="k_7" name="k_7" value="0.23542143021011724" />
+            <parameter id="k_8" name="k_8" value="0.16656277988571674" />
+            <parameter id="n_1" name="n_1" value="4.984815171182377" />
+            <parameter id="n_2" name="n_2" value="2.8295162530678106" />
+            <parameter id="n_3" name="n_3" value="2.6894770416487295" />
+            <parameter id="n_4" name="n_4" value="4.837579893563718" />
+            <parameter id="n_5" name="n_5" value="5.3849794884773186" />
+            <parameter id="n_6" name="n_6" value="3.4625448128037486" />
+            <parameter id="n_7" name="n_7" value="3.272365496075101" />
+            <parameter id="n_8" name="n_8" value="4.2612601924289" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR039C_degradation" name="YCR039C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCR039C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03176767003592145" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR491C_synthesis" name="YDR491C_synthesis: (1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR491C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPL248C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.020287851861788945" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.038721063733326504" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.038721063733326504" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.03703770362518308" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.7587191213248298" />
+            <parameter id="n_1" name="n_1" value="2.3808842848879" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR491C_degradation" name="YDR491C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR491C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.020287851861788945" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YIL162W_synthesis" name="YIL162W_synthesis: ~(1) + (2) + (3)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YIL162W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL209W" />
+          <modifierSpeciesReference species="YOR140W" />
+          <modifierSpeciesReference species="YGL035C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02345876924381694" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.016225737702023405" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.016225737702023405" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="bindsAsComplex_3" name="bindsAsComplex_3" value="0.0" />
+            <parameter id="numActivators_3" name="numActivators_3" value="1.0" />
+            <parameter id="numDeactivators_3" name="numDeactivators_3" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.5229422153937319" />
+            <parameter id="a_1" name="a_1" value="0.0" />
+            <parameter id="a_2" name="a_2" value="1.0" />
+            <parameter id="a_3" name="a_3" value="0.5861845225141219" />
+            <parameter id="a_4" name="a_4" value="1.0" />
+            <parameter id="a_5" name="a_5" value="0.7594630762927959" />
+            <parameter id="a_6" name="a_6" value="1.0" />
+            <parameter id="a_7" name="a_7" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.06377302125561982" />
+            <parameter id="k_2" name="k_2" value="0.4222913853195496" />
+            <parameter id="k_3" name="k_3" value="0.3825651287799701" />
+            <parameter id="n_1" name="n_1" value="4.403272188064177" />
+            <parameter id="n_2" name="n_2" value="1.209251928982761" />
+            <parameter id="n_3" name="n_3" value="2.9781919378523214" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YIL162W_degradation" name="YIL162W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YIL162W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02345876924381694" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YNL035C_synthesis" name="YNL035C_synthesis: (1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YNL035C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGR044C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03774761936876092" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.02410971332531874" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.02410971332531874" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.007358832607043695" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.7464868046226911" />
+            <parameter id="n_1" name="n_1" value="5.225259047507384" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YNL035C_degradation" name="YNL035C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YNL035C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03774761936876092" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR112W_synthesis" name="YDR112W_synthesis: ~(1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR112W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02927038188799598" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.019420973852094816" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.019420973852094816" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.039930453147178024" />
+            <parameter id="k_1" name="k_1" value="0.9961281120963394" />
+            <parameter id="n_1" name="n_1" value="2.5412983631878046" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR112W_degradation" name="YDR112W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR112W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02927038188799598" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YNL238W_synthesis" name="YNL238W_synthesis: ~(1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YNL238W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03368180862284003" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.029217866512472115" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.029217866512472115" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.04786023058918476" />
+            <parameter id="k_1" name="k_1" value="0.03182611809810623" />
+            <parameter id="n_1" name="n_1" value="1.0807024933233353" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YNL238W_degradation" name="YNL238W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YNL238W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03368180862284003" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR018CA_synthesis" name="YCR018CA_synthesis: (1*2*3~4) + (5)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCR018CA" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR463W" />
+          <modifierSpeciesReference species="YJL110C" />
+          <modifierSpeciesReference species="YDL170W" />
+          <modifierSpeciesReference species="YKL020C" />
+          <modifierSpeciesReference species="YOL067C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.027640302055594056" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.017620918437626164" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.017620918437626164" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="3.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.0023109532857753185" />
+            <parameter id="a_1" name="a_1" value="0.4906931315786017" />
+            <parameter id="a_2" name="a_2" value="0.6995050425240363" />
+            <parameter id="a_3" name="a_3" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.8062281523621642" />
+            <parameter id="k_2" name="k_2" value="0.8924486817512661" />
+            <parameter id="k_3" name="k_3" value="0.7266594326822087" />
+            <parameter id="k_4" name="k_4" value="0.8941539993556217" />
+            <parameter id="k_5" name="k_5" value="0.7207865904085338" />
+            <parameter id="n_1" name="n_1" value="1.6212778757573505" />
+            <parameter id="n_2" name="n_2" value="2.920639629307643" />
+            <parameter id="n_3" name="n_3" value="2.196649703938957" />
+            <parameter id="n_4" name="n_4" value="2.6882368439937223" />
+            <parameter id="n_5" name="n_5" value="2.032841667103558" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCR018CA_degradation" name="YCR018CA_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCR018CA" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.027640302055594056" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YAL049C_synthesis" name="YAL049C_synthesis: (1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YAL049C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPL248C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.01987555917800399" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.018247846310418522" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.018247846310418522" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.059862872553839895" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.36560399600770327" />
+            <parameter id="n_1" name="n_1" value="1.968169121698933" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YAL049C_degradation" name="YAL049C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YAL049C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.01987555917800399" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR098CA_synthesis" name="YDR098CA_synthesis: ~(1~2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR098CA" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YOL089C" />
+          <modifierSpeciesReference species="YDR463W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02671340145792698" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.034063041786786666" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.034063041786786666" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.24018263879391344" />
+            <parameter id="k_1" name="k_1" value="0.6952558698644862" />
+            <parameter id="k_2" name="k_2" value="0.020470090836752206" />
+            <parameter id="n_1" name="n_1" value="1.1162588172540404" />
+            <parameter id="n_2" name="n_2" value="5.062645423346346" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR098CA_degradation" name="YDR098CA_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR098CA" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02671340145792698" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YJR138W_synthesis" name="YJR138W_synthesis: ~(1) + (2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YJR138W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR253C" />
+          <modifierSpeciesReference species="YPL038W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.01931629759724941" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.020476437086810288" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.020476437086810288" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.37379147136769303" />
+            <parameter id="a_1" name="a_1" value="0.0" />
+            <parameter id="a_2" name="a_2" value="1.0" />
+            <parameter id="a_3" name="a_3" value="0.47274554090046156" />
+            <parameter id="k_1" name="k_1" value="0.4499065373465419" />
+            <parameter id="k_2" name="k_2" value="0.7431990211666561" />
+            <parameter id="n_1" name="n_1" value="3.5230935510348074" />
+            <parameter id="n_2" name="n_2" value="3.5692379625352446" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YJR138W_degradation" name="YJR138W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YJR138W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.01931629759724941" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR260C_synthesis" name="YMR260C_synthesis: ~(1*2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YMR260C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YJL110C" />
+          <modifierSpeciesReference species="YGL035C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.020182025971946495" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.02362921002347132" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.02362921002347132" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.013432713605662339" />
+            <parameter id="k_1" name="k_1" value="0.4601734193973243" />
+            <parameter id="k_2" name="k_2" value="0.9924614637042396" />
+            <parameter id="n_1" name="n_1" value="1.4589450099357841" />
+            <parameter id="n_2" name="n_2" value="1.113659920929726" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR260C_degradation" name="YMR260C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YMR260C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.020182025971946495" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YER079W_synthesis" name="YER079W_synthesis: (1) + ~(2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YER079W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGR044C" />
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.028491555617850682" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.021635487856205917" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.021635487856205917" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.5058271457234951" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.0" />
+            <parameter id="a_3" name="a_3" value="0.5276131055940341" />
+            <parameter id="k_1" name="k_1" value="0.540539513968397" />
+            <parameter id="k_2" name="k_2" value="0.3753795966715552" />
+            <parameter id="n_1" name="n_1" value="2.7386293769780554" />
+            <parameter id="n_2" name="n_2" value="5.746950415397724" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YER079W_degradation" name="YER079W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YER079W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.028491555617850682" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR283C_synthesis" name="YMR283C_synthesis: ~(1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YMR283C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL209W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.02992177446660513" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.01665724878043044" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.01665724878043044" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.04151218670802548" />
+            <parameter id="k_1" name="k_1" value="0.8952382708247751" />
+            <parameter id="n_1" name="n_1" value="4.371673026424312" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR283C_degradation" name="YMR283C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YMR283C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.02992177446660513" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR228W_synthesis" name="YMR228W_synthesis: (1*2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YMR228W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YDR463W" />
+          <modifierSpeciesReference species="YOL067C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.021282352331468125" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.10874623580816685" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.10874623580816685" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.05664908201316285" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.4798106096219271" />
+            <parameter id="k_2" name="k_2" value="0.7919275494827889" />
+            <parameter id="n_1" name="n_1" value="3.3462224800643403" />
+            <parameter id="n_2" name="n_2" value="2.785714892861359" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YMR228W_degradation" name="YMR228W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YMR228W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.021282352331468125" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YBR275C_synthesis" name="YBR275C_synthesis: (1*2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YBR275C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL209W" />
+          <modifierSpeciesReference species="YDL170W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03478335519084417" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.018771643561018007" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.018771643561018007" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.010045502898337827" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.11011035336181521" />
+            <parameter id="k_2" name="k_2" value="0.4348925334215164" />
+            <parameter id="n_1" name="n_1" value="3.143294240785446" />
+            <parameter id="n_2" name="n_2" value="1.0406482844097549" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YBR275C_degradation" name="YBR275C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YBR275C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03478335519084417" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGR084C_synthesis" name="YGR084C_synthesis: (1) + ~(2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YGR084C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YJL056C" />
+          <modifierSpeciesReference species="YLR098C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.019956971291671375" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.019291467613604826" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.019291467613604826" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="1.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.4502074557488402" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="0.0" />
+            <parameter id="a_3" name="a_3" value="0.7162495060523133" />
+            <parameter id="k_1" name="k_1" value="0.6308645120379515" />
+            <parameter id="k_2" name="k_2" value="0.7301686664181761" />
+            <parameter id="n_1" name="n_1" value="3.8294384801599306" />
+            <parameter id="n_2" name="n_2" value="1.8522727020217538" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YGR084C_degradation" name="YGR084C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YGR084C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.019956971291671375" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR040C_synthesis" name="YDR040C_synthesis: (1) + (2~3) + ~(4)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YDR040C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YKL020C" />
+          <modifierSpeciesReference species="YGL209W" />
+          <modifierSpeciesReference species="YGL035C" />
+          <modifierSpeciesReference species="YJL110C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.0403288441949585" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.029757991682598184" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.029757991682598184" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="bindsAsComplex_2" name="bindsAsComplex_2" value="0.0" />
+            <parameter id="numActivators_2" name="numActivators_2" value="1.0" />
+            <parameter id="numDeactivators_2" name="numDeactivators_2" value="1.0" />
+            <parameter id="bindsAsComplex_3" name="bindsAsComplex_3" value="0.0" />
+            <parameter id="numActivators_3" name="numActivators_3" value="1.0" />
+            <parameter id="numDeactivators_3" name="numDeactivators_3" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.5438475906722651" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="a_2" name="a_2" value="1.0" />
+            <parameter id="a_3" name="a_3" value="1.0" />
+            <parameter id="a_4" name="a_4" value="0.0" />
+            <parameter id="a_5" name="a_5" value="0.5671930170578071" />
+            <parameter id="a_6" name="a_6" value="0.629325677776931" />
+            <parameter id="a_7" name="a_7" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.09407611820148304" />
+            <parameter id="k_2" name="k_2" value="0.84891070533311" />
+            <parameter id="k_3" name="k_3" value="0.6101995851914398" />
+            <parameter id="k_4" name="k_4" value="0.8694809888419696" />
+            <parameter id="n_1" name="n_1" value="1.3220393668230743" />
+            <parameter id="n_2" name="n_2" value="3.0828895162889793" />
+            <parameter id="n_3" name="n_3" value="2.309162977278751" />
+            <parameter id="n_4" name="n_4" value="2.338235176327312" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YDR040C_degradation" name="YDR040C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YDR040C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.0403288441949585" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCL041C_synthesis" name="YCL041C_synthesis: (1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YCL041C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGL254W" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.0203911832832079" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.027223634681855458" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.027223634681855458" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.05842797553229247" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.5492849600408226" />
+            <parameter id="n_1" name="n_1" value="2.4319598327729484" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YCL041C_degradation" name="YCL041C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YCL041C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.0203911832832079" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YAR002CA_synthesis" name="YAR002CA_synthesis: (1)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YAR002CA" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPL248C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.030622933795322927" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.027253207511678937" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.027253207511678937" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.05774159949150483" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.0729831863171421" />
+            <parameter id="n_1" name="n_1" value="4.03527702538366" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YAR002CA_degradation" name="YAR002CA_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YAR002CA" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.030622933795322927" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOR236W_synthesis" name="YOR236W_synthesis: (1*2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YOR236W" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YGR044C" />
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.03276257289083813" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.033725086332724266" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.033725086332724266" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="0.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="0.06483660685928681" />
+            <parameter id="a_1" name="a_1" value="1.0" />
+            <parameter id="k_1" name="k_1" value="0.05119978122413159" />
+            <parameter id="k_2" name="k_2" value="0.03853510022396222" />
+            <parameter id="n_1" name="n_1" value="1.0199790695079605" />
+            <parameter id="n_2" name="n_2" value="1.9961198193969496" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YOR236W_degradation" name="YOR236W_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YOR236W" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.03276257289083813" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YFL065C_synthesis" name="YFL065C_synthesis: ~(1~2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YFL065C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YLR013W" />
+          <modifierSpeciesReference species="YDR146C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.029534472204454036" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.02621034725002027" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.02621034725002027" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="1.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="1.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.1802035648980025" />
+            <parameter id="k_1" name="k_1" value="0.10061948347603902" />
+            <parameter id="k_2" name="k_2" value="0.9988527036597952" />
+            <parameter id="n_1" name="n_1" value="2.447252209991136" />
+            <parameter id="n_2" name="n_2" value="2.294752363518861" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YFL065C_degradation" name="YFL065C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YFL065C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.029534472204454036" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YBL074C_synthesis" name="YBL074C_synthesis: ~(1*2)" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_void_" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="YBL074C" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="YPL038W" />
+          <modifierSpeciesReference species="YOL089C" />
+        </listOfModifiers>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="max" name="max" value="0.027305636461908762" />
+            <parameter id="deltaProtein" name="deltaProtein" value="0.01875727128701211" />
+            <parameter id="maxTranslation" name="maxTranslation" value="0.01875727128701211" />
+            <parameter id="bindsAsComplex_1" name="bindsAsComplex_1" value="1.0" />
+            <parameter id="numActivators_1" name="numActivators_1" value="2.0" />
+            <parameter id="numDeactivators_1" name="numDeactivators_1" value="0.0" />
+            <parameter id="a_0" name="a_0" value="1.0" />
+            <parameter id="a_1" name="a_1" value="0.025852287660730555" />
+            <parameter id="k_1" name="k_1" value="0.7374638722301461" />
+            <parameter id="k_2" name="k_2" value="0.9997200108855031" />
+            <parameter id="n_1" name="n_1" value="2.3353708773409743" />
+            <parameter id="n_2" name="n_2" value="4.334191391717683" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="YBL074C_degradation" name="YBL074C_degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="YBL074C" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_void_" />
+        </listOfProducts>
+        <kineticLaw>
+          <listOfParameters>
+            <parameter id="delta" name="delta" value="0.027305636461908762" />
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
