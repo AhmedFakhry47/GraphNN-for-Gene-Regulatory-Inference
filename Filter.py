@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
 	direc,n_files = sys.argv[1], int(sys.argv[2])
 	
-	output  = {'N-{}'.format(i):{} for i in range(1,n_files+1)}
+	output  = {}
 	
 	file1   = 'N_{}/Generated Yeast-{}_goldstandard.tsv'
 	file2   = 'N_{}/Generated Yeast-{}_multifactorial_perturbations.tsv'
@@ -45,14 +45,16 @@ if __name__ == '__main__':
 
 		#To store labels 
 		groundTs = open_file(os.path.join(direc,file1.format(i,i)))
-		
+		temp_key = ''
 		for p,groundT in enumerate(groundTs):
-			output['N-{}'.format(i)][p] = {}
-			output['N-{}'.format(i)][p]['Gene_A'],output['N-{}'.format(i)][p]['Gene_B'] = groundT[0],groundT[1]
-			output['N-{}'.format(i)][p]['Label'] = int(groundT[2])
 
-			output['N-{}'.format(i)][p]['Expression_A'] = genes[output['N-{}'.format(i)][p]['Gene_A']]
-			output['N-{}'.format(i)][p]['Expression_B'] = genes[output['N-{}'.format(i)][p]['Gene_B']]
+			temp_key = groundT[0] +'-'+ groundT[1]
+
+			if temp_key not in output.keys():
+				output[temp_key] = {}
+				output[temp_key] = int(groundT[2])
+				output[temp_key] = genes[groundT[0]]
+				output[temp_key] = genes[groundT[1]]
 
 	outfile = open('Preprocessed.json','w')
 	json.dump(output,outfile,cls=numpy_encoder)
