@@ -52,9 +52,9 @@ if __name__ == '__main__':
 
 			if temp_key not in output.keys():
 				output[temp_key] = {}
-				output[temp_key] = int(groundT[2])
-				output[temp_key] = genes[groundT[0]]
-				output[temp_key] = genes[groundT[1]]
+				output[temp_key]['Label']        = int(groundT[2])
+				output[temp_key]['Expression_A'] = genes[groundT[0]]
+				output[temp_key]['Expression_B'] = genes[groundT[1]]
 
 	outfile = open('Preprocessed.json','w')
 	json.dump(output,outfile,cls=numpy_encoder)
