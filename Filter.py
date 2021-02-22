@@ -24,6 +24,7 @@ if __name__ == '__main__':
 	output  = {}
 	
 	file1   = 'N_{}/Generated Yeast-{}_goldstandard.tsv'
+	file1_  = 'N_{}/Generated Yeast-{}_goldstandard_signed.tsv'
 	file2   = 'N_{}/Generated Yeast-{}_multifactorial_perturbations.tsv'
 	
 
@@ -43,6 +44,23 @@ if __name__ == '__main__':
 		
 		del expressions
 
+
+		#To store directions 
+		geneSign = open_file(os.path.join(direc,file1_.format(i,i)))
+		genesS   = {}
+		temp_key = ''
+
+		for sign in geneSign:
+			temp_key = sign[0] +'-' + sign[1]
+
+			genesS[temp_key] = {}
+			if sign[2] == '+':
+				genesS[temp_key]['P'] = 1
+				genesS[temp_key]['N'] = 0
+			elif sign[2] == '-':
+				genesS[temp_key]['P'] = 0
+				genesS[temp_key]['N'] = 1
+
 		#To store labels 
 		groundTs = open_file(os.path.join(direc,file1.format(i,i)))
 		temp_key = ''
@@ -53,6 +71,15 @@ if __name__ == '__main__':
 			if temp_key not in output.keys():
 				output[temp_key] = {}
 				output[temp_key]['Label']        = int(groundT[2])
+
+				#To be Edited
+				if temp_key in genesS.keys():
+					output[temp_key]['P'] = genesS[temp_key]['P']
+					output[temp_key]['N'] = genesS[temp_key]['N']
+				else:
+					output[temp_key]['P'] = 0
+					output[temp_key]['N'] = 0
+
 				output[temp_key]['Expression_A'] = genes[groundT[0]]
 				output[temp_key]['Expression_B'] = genes[groundT[1]]
 
