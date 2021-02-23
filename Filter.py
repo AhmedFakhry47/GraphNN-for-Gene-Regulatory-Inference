@@ -70,7 +70,8 @@ if __name__ == '__main__':
 
 			if temp_key not in output.keys():
 				output[temp_key] = {}
-				output[temp_key]['Label']        = int(groundT[2])
+				output[temp_key]['Labelx']= int(groundT[2])
+				output[temp_key]['Labely']= 1 - int(groundT[2])
 
 				#To be Edited
 				if temp_key in genesS.keys():
