@@ -4,4 +4,5 @@ mv '/content/Regulatory-Gene-Network-Inferance-from-gene-exepression-data/yeastr
 rm -R '/content/Regulatory-Gene-Network-Inferance-from-gene-exepression-data/'
 cd '/content/yeastract'
 tar -xf '/content/yeastract/yeastract_w_GT.tar.bz2'
+rm '/content/yeastract/yeastract_w_GT.tar.bz2'
 cd ..
