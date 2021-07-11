@@ -1,4 +1,3 @@
-from data_utils import MULTI_G
 from utils import Evaluation
 import tensorflow as tf
 
@@ -70,34 +69,4 @@ class Shallow_M (tf.keras.Model):
     return self.Predict(out)
 
 
-def FindrML_TRAINER(*params,**DATA):
-  if DATA:
-    DATA_X,DATA_Y = DATA['DATA']['data']
-    TRAIN_I,VAL_I,TEST_I = DATA['DATA']['index']
-
-  if params:
-    epochs,batchsize,n_classes = params[0],params[1],params[2]
-  else:
-    epochs,batchsize,n_classes = 300,8,4
-  
-  TRAIN_G = MULTI_G(DATA_X[TRAIN_I],DATA_Y[TRAIN_I][:,:n_classes],batch_size=batchsize,n_classes=n_classes)
-  VAL_G   = MULTI_G(DATA_X[VAL_I]  ,DATA_Y[VAL_I][:,:n_classes]  ,batch_size=1 ,n_classes=n_classes)
-  TEST_G  = MULTI_G(DATA_X[TEST_I] ,DATA_Y[TEST_I][:,:n_classes] ,batch_size=1 ,n_classes=n_classes)
-
-  FindrML  = Shallow_M(n_classes=n_classes,act='sig')
-
-  lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
-    initial_learning_rate=1e-2,
-    decay_steps=2500,
-    decay_rate=0.8)
-  optimizer = tf.keras.optimizers.SGD(learning_rate=lr_schedule)
-  FindrML.compile(optimizer=optimizer,loss='BinaryCrossentropy' ,
-                  metrics=['BinaryAccuracy',tf.keras.metrics.AUC(multi_label=True)])
-
-  earlystop = tf.keras.callbacks.EarlyStopping('val_loss',patience=100,restore_best_weights=True)
-  evaluator = Evaluation(VAL_G, DATA_Y[VAL_I], TEST_G, DATA_Y[TEST_I],multi=True)
-
-  FindrML.fit(TRAIN_G,epochs=epochs,validation_data=VAL_G,callbacks=[earlystop],verbose=0)
-  
-  return FindrML
   
